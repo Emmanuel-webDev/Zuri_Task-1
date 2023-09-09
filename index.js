@@ -18,8 +18,7 @@ const getDay = dt.getDay()
 const presentDay = days[getDay];
 
 //information
-const info = [
-    {
+const info = {
         "slack_name": "Chinonso Onuorah",
         "current_day": presentDay,
         "utc_time": utc,
@@ -28,14 +27,12 @@ const info = [
         "github_repo_url": "https://github.com/Emmanuel-webDev/Zuri_Task-1",
         "status_code": 200
     }
-]
 
-for (let index = 0; index < info.length; index++) {
-    if(info[index].slack_name !== req.query.slack_name && info[index].track !== req.query.track){
-             res.sendStatus(404).send("Not Found")
+    if(info.slack_name === req.query.slack_name && info.track === req.query.track){
+            return  res.json(info)
     } 
-}
-     res.json(info)
+    
+    res.sendStatus(404).send("Not Found")
 
 });
 
