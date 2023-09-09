@@ -19,10 +19,10 @@ const presentDay = days[getDay];
 
 //information
 const info = {
-        "slack_name": "Chinonso Onuorah",
+        "slack_name": "Chinonso_Onuorah",
         "current_day": presentDay,
         "utc_time": utc,
-        "track": "Backend",
+        "track": "backend",
         "github_file_url": "https://github.com/Emmanuel-webDev/Zuri_Task-1/index.js",
         "github_repo_url": "https://github.com/Emmanuel-webDev/Zuri_Task-1",
         "status_code": 200
