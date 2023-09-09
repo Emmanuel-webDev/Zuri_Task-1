@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.get('/info', async(req, res)=>{
+app.get('/api', async(req, res)=>{
 const dt = new Date()
 
 //gets current time in millisecs
