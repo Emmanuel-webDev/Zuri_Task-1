@@ -24,8 +24,8 @@ const info = [
         "current_day": presentDay,
         "utc_time": utc,
         "track": "Backend",
-        "github_file_url": "..",
-        "github_repo_url": "..",
+        "github_file_url": "https://github.com/Emmanuel-webDev/Zuri_Task-1/index.js",
+        "github_repo_url": "https://github.com/Emmanuel-webDev/Zuri_Task-1",
         "status_code": 200
     }
 ]
