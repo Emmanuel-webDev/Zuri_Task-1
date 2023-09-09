@@ -11,7 +11,7 @@ const current_time = dt.getTime()
 const offset = Math.floor(Math.random() * 5 * 60 * 1000) - 2 * 60 * 1000;
 //calc time with offset applied
 const adjusted_time = new Date( current_time + offset );
-const utc = adjusted_time.toISOString();
+const utc = adjusted_time.toISOString().split('.')[0].concat('Z');
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 const getDay = dt.getDay()
