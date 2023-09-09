@@ -13,11 +13,15 @@ const offset = Math.floor(Math.random() * 5 * 60 * 1000) - 2 * 60 * 1000;
 const adjusted_time = new Date( current_time + offset );
 const utc = adjusted_time.toISOString();
 
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const getDay = dt.getDay()
+const presentDay = days[getDay];
+
 //information
 const info = [
     {
         "slack_name": "Chinonso Onuorah",
-        "current_day": "Saturday",
+        "current_day": presentDay,
         "utc_time": utc,
         "track": "Backend",
         "github_file_url": "..",
